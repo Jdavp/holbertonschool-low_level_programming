@@ -1,9 +1,13 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+/**
+ * main - check last digit
+ *
+ *declare a number its greater of 5 less that 6 or 0
+ *
+ *Return: positive or negative or equal
+*/
 int main(void)
 {
 	int n;
