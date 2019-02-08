@@ -1,4 +1,4 @@
-BB#include <stdlib.h>
+#include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
 
@@ -7,7 +7,7 @@ BB#include <stdlib.h>
  *
  * print alphabet
  *
- *Return: It is supposed to be 0(
+ *Return: It is supposed to be 0
  */
 int main(void)
 {
@@ -16,5 +16,6 @@ int main(void)
 	for (ch = 'a' ; ch <= 'z' ; ch++)
 	{ putchar(ch);
 	}
+	putchar('\n');
 	return (0);
 }
