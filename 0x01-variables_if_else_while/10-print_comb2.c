@@ -5,7 +5,7 @@
 /**
  *main - print list of numbers
  *
- *numers with , a to 99
+ *numers with , from 0 to 99
  *
  *Return: 0
  */
@@ -25,6 +25,5 @@ int main(void)
 			putchar(' ');
 		}
 	}
-	putchar('\n');
 	return (0);
 }
