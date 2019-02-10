@@ -21,8 +21,10 @@ int main(void)
 			putchar(deci);
 			putchar(digi);
 			if (!(deci == 57 && digi == 57))
+			{
 			putchar(',');
 			putchar(' ');
+			}
 		}
 	}
 	return (0);
