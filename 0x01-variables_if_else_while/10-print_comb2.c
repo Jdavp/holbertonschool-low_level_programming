@@ -22,11 +22,11 @@ int main(void)
 			putchar(digi);
 			if (!(deci == 57 && digi == 57))
 			{
-			putchar(',');
-			if (!(deci == 57 && digi == 57))
-			putchar(' ');
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
+	putchar('\n');
 	return (0);
 }
