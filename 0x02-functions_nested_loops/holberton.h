@@ -1,6 +1,3 @@
-#ifndef _LIBRARY
-#define _LYBRARY
-
 int _putchar(char c);
 void print_alphabet(void);
-#endif
+void print_alphabet_x10(void);
