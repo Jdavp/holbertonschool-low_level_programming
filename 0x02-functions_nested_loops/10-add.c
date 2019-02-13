@@ -5,16 +5,14 @@
  *
  *@a: - numbers entrance
  *@b: - numbers entrance
- *@total: - total
  *
  *Return: total
  */
 
-int add(int a , int b)
-
+int add(int a, int b)
 {
-	int total;
+	int t;
 
-	total = a + b;
-	return (total);
+	t = a + b;
+	return (t);
 }
