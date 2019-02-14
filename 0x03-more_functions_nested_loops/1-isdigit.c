@@ -1,7 +1,7 @@
-#include "holberton.h"
+B#include "holberton.h"
 
 /**
- * _isupper - check for  uppercase letters
+ * _isdigit - check for  uppercase letters
  *
  *@c: - letters entrance
  *
@@ -11,9 +11,9 @@
 int _isdigit(int c)
 
 {
-  if (c >= 48  && c <= 57)
-    return (1);
+if (c >= 48  && c <= 57)
+return (1);
 
-  else
-    return (0);
+else
+return (0);
 }
