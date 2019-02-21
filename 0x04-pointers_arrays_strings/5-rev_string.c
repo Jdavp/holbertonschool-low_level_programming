@@ -15,11 +15,10 @@ int front = 0;
 int back = 0;
 int aux = 0;
 
-while (s[back])
+while (s[back] != '\0')
 back++;
 back--;
-
-while (front != back || front < back)
+while (back > front && back != front)
 {
 aux = s[front];
 s[front] = s[back];
