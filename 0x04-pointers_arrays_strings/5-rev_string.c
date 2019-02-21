@@ -19,7 +19,7 @@ while (s[back])
 back++;
 back--;
 
-while (front != back)
+while (front != back || front < back)
 {
 aux = s[front];
 s[front] = s[back];
