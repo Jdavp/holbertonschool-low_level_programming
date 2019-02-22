@@ -1,28 +1,28 @@
-#include "holberton.h"
+B#include "holberton.h"
 /**
- *rev_string - print string in reverse after exchange positions
+ *puts2 - print string every 2 spaces
  *
  *prints string from the last point to the first exchanging positions
  *
- *@s: string pointer
+ *@str: string pointer
  *
  *Return: return string length
  **/
 
 void puts2(char *str)
 {
-	int front,back;
 	int c = 0;
+	int b;
 
-while (str[back])
+while (str[b])
 {
-back++;
+b++;
 }
-for (front = 0; front < back; front++)
+for (c = 0; c ; c++)
 {
-	if ((str[c] % 2) == 0)
-		c++;
-		_putchar(c);
+	if ((c % 2) == 0)
+
+		_putchar(str[c]);
 	}
 _putchar('\n');
 }
