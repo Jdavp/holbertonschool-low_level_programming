@@ -1,10 +1,11 @@
 #include "holberton.h"
 
 /**
+ *_puts_recursion - prints characters after moving pointer
  *
+ *prints characters in a string
  *
- *_puts_recursion: prints characters after moving pointer
- *
+ *@s: string
  *
  **/
 
