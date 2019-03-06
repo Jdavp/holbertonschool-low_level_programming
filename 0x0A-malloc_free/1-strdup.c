@@ -28,7 +28,7 @@ char *_strdup(char *str)
 
 	if (sec == NULL)
 	{
-		return(NULL);
+		return (NULL);
 	}
 
 	while (str[si])
