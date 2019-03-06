@@ -13,19 +13,19 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	/*char *s3;*/
+	char *s3;
 	int su = 0;
 	int sd = 0;
+	int st = 0;
 
-	/*if (s1 == NULL)
+	if (s1 == NULL)
 	{
-		return (" ");
+		return ("");
 	}
 	if (s2 == NULL)
 		{
-		return (" ");
+		return ("");
 		}
-	*/
 	while(s1[su] != '\0')
 	{
 		su++;
@@ -34,24 +34,32 @@ char *str_concat(char *s1, char *s2)
 
 	while (s2[sd] != '\0')
 	{
+	printf("sd = %d\n",sd);
 		sd++;
 	}
 	printf("sd = %d\n",sd);
-	/*
-	s3 = (char *)malloc(sizeof(char) * (1));
+
+	s3 = (char *)malloc(sizeof(char) * (sd + su + 1));
 	if (s3 == NULL)
-		{
+	{
 			printf("s3");
 		return (NULL);
-		}*/
-	/*while (s2[sd] != '\0')
+	}
+
+	while (st < sd + su + 1)
 	{
+		if (su > '\0')
+		{
 		s3[st] = s1[su];
 		st++;su++;
+		}
+		else
+		{
 		s3[st] = s2[sd];
 		st++;sd++;
+		}
 	}
-	*/
-	/*return (s3);*/
-      return (s1);
+	return (s3);
+      return (0);
+
 }
