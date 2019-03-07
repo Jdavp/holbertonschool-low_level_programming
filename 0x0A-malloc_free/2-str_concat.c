@@ -19,7 +19,7 @@ char *str_concat(char *s1, char *s2)
 	int st = 0;
 
 	if (s1 == NULL || s2 == NULL)
-		return ("");
+		return (" ");
 
 	while (s1[su] != '\0')
 		su++;
