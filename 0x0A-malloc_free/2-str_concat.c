@@ -21,6 +21,9 @@ char *str_concat(char *s1, char *s2)
 	if (s1 == NULL || s2 == NULL)
 		return ("");
 
+	if (s1 == NULL && s2 == NULL)
+		return (NULL);
+
 	while (s1[su] != '\0')
 		su++;
 
