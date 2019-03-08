@@ -30,4 +30,5 @@ char *create_array(unsigned int size, char c);
 char *_strdup(char *str);
 char *str_concat(char *s1, char *s2);
 void *malloc_checked(unsigned int b);
+int *array_range(int min, int max);
 #endif /* _HOLBERTON_H_ */
