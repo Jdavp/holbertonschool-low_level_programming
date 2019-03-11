@@ -1,7 +1,11 @@
 #include <stdio.h>
-
+/**
+ * main - print base file
+ *
+ * Return: (0)
+*/
 int main(void)
 {
-	printf("Name :%s\n", __BASE_FILE__);
+	printf("%s\n", __FILE__);
 	return (0);
 }
