@@ -1,4 +1,4 @@
-#include <stlib.h>
+#include <stdlib.h>
 #include "dog.h"
 /**
  *init_dog - the mascot
@@ -10,10 +10,10 @@
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-struct dog = d;
-if (d == NULL)
-	return (NULL);
-d->name = name;
-d->age = age;
-d->owner = owner;
+	if (d != NULL)
+	{
+		d->name = name;
+		d->age = age;
+		d->owner = owner;
+	}
 }
