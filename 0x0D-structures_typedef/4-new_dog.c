@@ -8,17 +8,17 @@
 
 struct dog_t *new_dog(char *name, float age, char *owner)
 {
-	user = malloc(sizeof(struct dog_t));
+	new_dog = malloc(sizeof(struct dog_t));
 
 	if (new_dog == NULL)
 		return (NULL);
 	{
-	if (name == NULL);
+	if (name == NULL)
 	{
 		return(NULL);
 		free(name);
 	}
-	if (owner == NULL);
+	if (owner == NULL)
 	{
 		return(NULL);
 		free(owner);
