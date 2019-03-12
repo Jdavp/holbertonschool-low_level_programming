@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "dog.h"
 /**
- *print_dog - the mascot
+ *free_dog - free the info from the dogs
  *@d: user
  */
 
