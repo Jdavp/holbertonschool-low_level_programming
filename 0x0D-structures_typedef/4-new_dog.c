@@ -79,5 +79,6 @@ char *_strdup(char *str)
 		sec[si] = str[si];
 		si++;
 	}
+sec[si] = 0;
 	return (sec);
 }
