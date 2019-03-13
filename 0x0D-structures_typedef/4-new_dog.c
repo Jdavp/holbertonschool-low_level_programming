@@ -2,29 +2,79 @@
 #include <stdio.h>
 #include "dog.h"
 /**
- *print_dog - the mascot
- *@d: user
+ *new_dog - the mascot
+ *@name: name
+ *@age: age
+ *@owner: owner
+ *Return: list
  */
 
-struct dog_t *new_dog(char *name, float age, char *owner)
+dog_t *new_dog(char *name, float age, char *owner)
 {
-	new_dog = malloc(sizeof(struct dog_t));
+	dog_t *list;
 
-	if (new_dog == NULL)
+	list = malloc(sizeof(dog_t));
+
+	if (list == NULL)
+	{
+		free(list);
 		return (NULL);
+	}
+
+	list->name = _strdup(name);
+
+	if (list->name == NULL)
 	{
-	if (name == NULL)
-	{
-		return(NULL);
 		free(name);
+		return (NULL);
 	}
-	if (owner == NULL)
+
+	list->owner = _strdup(owner);
+
+	if (list->owner == NULL)
 	{
-		return(NULL);
 		free(owner);
+		return (NULL);
 	}
-	new_dog->name = name;
-	new_dog->age = age;
-	new_dog->owner = owner;
+
+	list->age = age;
+	return (list);
+}
+
+/**
+ *_strdup - returns a pointer which contains a copy of other string
+ *
+ *@str: inicial string
+ *
+ *
+ *Return: zero
+ **/
+
+char *_strdup(char *str)
+{
+	char *sec;
+	int i;
+	int si = 0;
+
+	if (str == NULL)
+	{
+		return (NULL);
 	}
+
+	for (i = 0; str[i] != '\0'; ++i)
+		;
+	i++;
+
+	sec = malloc(sizeof(char) * i);
+	if (!sec)
+	{
+		return (NULL);
+	}
+
+	while (str[si])
+	{
+		sec[si] = str[si];
+		si++;
+	}
+	return (sec);
 }
