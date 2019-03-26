@@ -4,6 +4,28 @@
 #include <string.h>
 
 /**
+ *_strlen - function returns the length of a string
+ *
+ *length of a string
+ *
+ *@s: pointer
+ *
+ *Return: return string length
+ **/
+
+int _strlen(char *s)
+{
+	int l = 0;
+
+	while (*s != '\0')
+	{
+		s++;
+		l++;
+	}
+	return (l);
+}
+
+/**
  *add_node_end - add a new node at the end
  *@head: initial pointer
  *@str: original string value
@@ -23,7 +45,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (NULL);
 	}
 	new->str = strdup(str);
-	new->len = strlen(new->str);
+	new->len = _strlen(new->str);
 	new->next = NULL;
 	if (*head != NULL)
 	{
