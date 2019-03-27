@@ -3,15 +3,6 @@
 int _putchar(char c);
 
 /**
- * struct list_s - singly linked list
- * @str: string - (malloc'ed string)
- * @len: length of the string
- * @next: points to the next node
- *
- * Description: singly linked list node structure
- * for Holberton project
- */
-/**
  * struct listint_s - singly linked list
  * @n: integer
  * @next: points to the next node
