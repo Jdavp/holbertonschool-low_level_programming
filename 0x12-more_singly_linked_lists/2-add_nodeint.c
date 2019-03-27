@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 /**
- *listint_len - return nodes
- *@h: initial pointer
- *
+ *add_nodeint - add a news nodes to the begin
+ *@head: initial pointer
+ *@n:numbers
  *
  *Return: counter of nodes
  */
@@ -18,7 +18,7 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	if (new == NULL)
 	{
 		free(new);
-		return(NULL);
+		return (NULL);
 	}
 	(*new).n = n
 ;
