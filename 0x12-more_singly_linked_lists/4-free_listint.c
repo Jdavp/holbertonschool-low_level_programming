@@ -13,10 +13,10 @@
 
 void free_listint(listint_t *head)
 {
-	if (!head)
+	if (head)
 	{
 		free_listint(head->next);
-		free (head);
+		free(head);
 	}
 		head = NULL;
 }
