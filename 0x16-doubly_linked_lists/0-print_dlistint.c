@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- *print_listint - print data in a node
+ *print_dlistint - print data in all nodes
  *@h: initial pointer
  *
  *
