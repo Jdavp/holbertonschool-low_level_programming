@@ -4,9 +4,9 @@
 
 /**
  *add_dnodeint - add a news nodes to the begin
- *@head: initial pointer
+ *@h: initial pointer
  *@n:numbers
- *
+ *@idx: index
  *Return: counter of nodes
  */
 
@@ -17,15 +17,16 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n);
 	dlistint_t *gotnode;
 	dlistint_t *new;
 
-	if (idx = 0)
-		return(add_dnodeint(h, n));
+	if (idx == 0)
+		return (add_dnodeint(h, n));
 
 	gotnode = get_dnodeint_at_index(*h, idx);
 
-	if(gotnode != NULL && (*(gotnode).next = NULL)
-	   return(add_dnodeint_end(h, idx));
+	if (gotnode != NULL && (*(gotnode).next = NULL)
+		{return (add_dnodeint_end(h, idx));
+		}
 
-	if(idx != 0 && (*(gotnode).next != NULL))
+	if (idx != 0 && (*(gotnode).next != NULL))
 		new = malloc(sizeof(dlistint_t));
 
 	if (new == NULL)
