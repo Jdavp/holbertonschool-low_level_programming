@@ -23,13 +23,13 @@ void hash_table_print(const hash_table_t *ht)
 		{
 			if (m0 == 1)
 			{
-				printf("'%s':'%s'", ai[i]->key, ai[i]->value);
+				printf("'%s': '%s'", ai[i]->key, ai[i]->value);
 				ai[i] = ai[i]->next;
 				m0 = 0;
 			}
 			else
 			{
-				printf(", '%s':'%s'", ai[i]->key, ai[i]->value);
+				printf(", '%s': '%s'", ai[i]->key, ai[i]->value);
 				ai[i] = ai[i]->next;
 			}
 		}
