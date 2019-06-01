@@ -33,7 +33,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 				ht->array[keyindex]->value = strdup(value);
 				return (1);
 			}
-			auxposition = ht->array[keyindex]->next;
+			ht->array[keyindex] = ht->array[keyindex]->next;
 		}
 	}
 	newnode = malloc(sizeof(hash_node_t));
