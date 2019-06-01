@@ -20,9 +20,9 @@ void hash_table_print(const hash_table_t *ht)
 	printf("{");
 	while (i < ht->size)
 	{
-		while (aux[i] != NULL)
+		ai = aux[i];
+		while (ai != NULL)
 		{
-			ai = aux[i];
 			if (m0 == 1)
 			{
 				printf("'%s': '%s'", ai->key, ai->value);
@@ -34,8 +34,6 @@ void hash_table_print(const hash_table_t *ht)
 				printf(", '%s': '%s'", ai->key, ai->value);
 				ai = ai->next;
 			}
-			if (!ai)
-				break;
 		}
 	i++;
 	}
