@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * bubble_sort - function that sorts an array of integers in ascending
- * order using the Bubble sort algorithm
+ * selection_sort - function that sorts an array of integers in ascending
+ * order using the insertion sort algorithm
  * @array: pointer to an int array
  * @size: size of the array
  * Return: Nothing
