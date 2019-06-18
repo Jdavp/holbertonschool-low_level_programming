@@ -13,7 +13,7 @@ void insertion_sort_list(listint_t **list)
 	if (!*list)
 		return;
 	sup = *list;
-	while (sup)
+	while (sup->next)
 	{
 		if (sup->next && sup->next->n < sup->n)
 		{
@@ -21,7 +21,7 @@ void insertion_sort_list(listint_t **list)
 			if ((*list)->prev)
 				*list = (*list)->prev;
 			print_list(*list);
-			while (aux && aux->n > aux->next->n)
+			while (aux && aux->next && aux->n > aux->next->n)
 			{
 				aux = change(aux);
 				if (!aux->prev->prev)
